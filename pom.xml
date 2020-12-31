@@ -39,7 +39,34 @@
     </properties>
 
     <dependencyManagement>
-
+                <dependencies>
+                    <dependency>
+                        <groupId>javax.xml.bind</groupId>
+                        <artifactId>jaxb-api</artifactId>
+                        <version>${jaxb.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>jaxb-core</artifactId>
+                        <version>${jaxb.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>jaxb-impl</artifactId>
+                        <version>${jaxb.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.mapstruct</groupId>
+                        <artifactId>mapstruct</artifactId>
+                        <version>${org.mapstruct.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.awaitility</groupId>
+                        <artifactId>awaitility</artifactId>
+                        <version>${awaitility.version}</version>
+                        <scope>test</scope>
+                    </dependency>
+                </dependencies>
     </dependencyManagement>
 
 </project>
